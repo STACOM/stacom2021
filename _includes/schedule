@@ -1,31 +1,36 @@
-|8:00-8:15| Welcome |
-|8:15-9:30| [Regular papers I]({{ "/papers/regulars" | relative_url }}) |
-
-| | 8:15-8:30 | Interpretable Prediction of Post-Infarct Ventricular Arrhythmia using Graph Convolutional Network<br>*Buntheng LY, Sonny Finsterbach, Marta Nuñez-Garcia, Pierre Jais, Damien Garreau, Hubert Cochet, Maxime Sermesant*
-| | 8:30-8:45 | Sensitivity analysis of left atrial wall modeling approaches and inlet/outlet boundary conditions in fluid simulations to predict thrombus formation<br>*Carlos Albors Lucas, Jordi Mill, Henrik Kjeldsberg, David Vilades, Andy Luis Olivares, Kristian Valen-Sendstad, Oscar Camara*
-| | 8:45-9:00 | Deep Computational Model for the Inference of Ventricular Activation Properties<br>*Lei Li, Julia Camps, Abhirup Banerjee, Marcel Beetz, Blanca Rodriguez, Vicente Grau*
-| | 9:00-9:15 | Learning correspondences of cardiac motion using biomechanics-informed modeling<br>*Xiaoran Zhang, Chenyu You, Shawn Ahn, Juntang Zhuang, Lawrence Staib, James Duncan*
-| | 9:15-9:30 | Spatiotemporal Cardiac Statistical Shape Modeling: A Data-Driven Approach<br>*Jadie Adams, Shireen Elhabian, Alan Morris, Nawazish Khan*
-
-|9:30-9:40| Coffee break |
-
-Keynote speaker: **Liang Zhong**
-
-INITIATE project - integrated computational modeling of right heart mechanics and blood flow dynamics in congenital heart disease
-
-|9:40-10:40| ![image-left]({{ "/images/zhong.png" | relative_url }}){: style="float: left; border-radius: 50%; margin-right: 10px;"} Liang Zhong is an Associate Professor at National Heart Centre Singapore and Duke National University of Singapore. He is heading Cardiovascular Engineering and Technologies Theme and co leading Cardiovascular System AI Lab. His research focuses on cardiovascular imaging, computational modeling, cardiovascular mechanics and physiology, and application of artificial intelligence in medicine. He has developed methods for quantification of heart shape, myocardial velocity and strain, and function using MRI feature tracking and 4D flow MRI. He is Principal Investigator for 1) INITIATE project to identify the most useful imaging and circulating biomarkers and exercise testing to guide management of paediatric and adult congenital heart disease [ClinicalTrials: NCT03217240]; 2) APOLLO programme. A 5000 cohort of Singaporean will be established for the study of coronary calcium score, epicardial adipose tissue, stenosis, and plaque using AI algorithm and cardiovascular outcome. His work has been supported by National Research Foundation, National Medical Research Council, Biomedical Research Council, A*STAR, and SingHealth Foundation. He has published over 180 peer-reviewed papers and filed 10 patents. |
-
-|10:40-12:10| <a href="https://zmiclab.github.io/projects/lascarqs22/" target="_blank">LAScarQS Challenge</a> <br> Left Atrial and Scar Quantification & Segmentation |
-|12:10-13:30| Lunch & [poster]({{ "/papers" | relative_url }}) <br>Click here to see all the posters |
-|13:30-15:00| <a href="http://cmr.miccai.cloud/" target="_blank">CMRxMotion Challenge</a> <br> Extreme Cardiac MRI Analysis Challenge under Respiratory Motion |
-|15:00-15:30| Coffee break |
-
-|15:30-16:45 | [Regular papers II]({{ "/papers/regulars" | relative_url }}) |
-
-| | 15:30-15:45 | Unsupervised Echocardiography Registration through Patch-based MLPs and Transformers<br>*Zihao Wang, Yingyu Yang, Maxime Sermesant, Hervé Delingette*
-| | 15:45-16:00 | 3D Mitral Valve Surface Reconstruction from 3D TEE via Graph Neural Networks<br>*Matthias Ivantsits, Boris Pfahringer, Markus Huellebrand, Lars Walczak, Lennart Tautz, Olena Nemchyna, Serdar Akansel, Jörg Kempfert, Simon Sündermann, Anja Hennemuth*
-| | 16:00-16:15 | Efficient MRI Reconstruction with Reinforcement Learning for Automatic Acquisition Stopping<br>*Ruru Xu, Ilkay Oksuz*
-| | 16:15-16:30 | Physics-based deep learning framework to learn and forecast cardiac electrophysiology dynamics<br>*Victoriya Kashtanova, Mihaela Pop, Ibrahim Ayed, Patrick Gallinari, Maxime Sermesant*
-| | 16:30-16:45 | Post-Infarction Risk Prediction with Mesh Classification Networks<br>*Marcel Beetz, Jorge Corral Acero, Abhirup Banerjee, Ingo Eitel, Ernesto Zacur, Torben Lange, Thomas Stiermaier, Ruben Evertz, Sören Backhaus, Holger Thiele, Alfonso Bueno-Orovio, Pablo Lamata, Andreas Schuster, Vicente Grau*
-
-|16:45-17:00| Prizes and closing |
+|9:00 UTC | Introduction 
+|9:10 UTC | **From Spins to Pictures to Digital Organs and Back**<br>Keynote speaker: Sebastian Kozerke, Professor of Biomedical Imaging, ETH Zurich<br><br>![image-left]({{ "/images/kozerke.png" | relative_url }}){: style="float: left; border-radius: 50%; margin-right: 10px;"}Among the diagnostic imaging modalities, Magnetic Resonance (MR) imaging stands out as it offers a wealth of contrast mechanisms. Using bipolar magnetic field gradients, motion of spins can be encoded. Depending on the scale or range of motion, modulations of image magnitude or phase can be detected. Coherent motion, as for example found with blood flow in larger vessels, is readily quantifiable as a phase change in the images while incoherent or stochastic motion, as with diffusing water in tissue, is detectable as image voxel-based magnitude attenuation. While both types of motion are encoded with essentially the same MR experiment, they offer very distinct insights into in-vivo anatomy and function.<br><br>![image-left]({{ "/images/kozerke-talk.png" | relative_url }}){: style="float: left; margin-right: 10px; width: 300px;"}Beyond motion-sensitive imaging, metabolic MR imaging offers yet another angle of capturing the complex interplay of mechanisms in-vivo. While MR has profited from the abundance of water in the human body, probing non-proton substrates has turned out very challenging given the low polarization of non-proton nuclei, the low concentration of non-proton-based substrates such as organic molecules and the limited sensitivity of detecting non-proton compounds. With break-through advances in dissolution Dynamic Nuclear Polarization (DNP) technology a new era has started allowing for real-time MR imaging of key metabolic substrates in the in-vivo heart and other organs.<br><br>In this presentation, we will discuss the importance of understanding the interplay of substrate supply, substrate metabolism and function of the heart. It will be demonstrated that changes in metabolic turnover present early hallmarks of deranging function as seen for example in heart failure. In the presentation the basic ideas of encoding flow, diffusion and metabolic information will be conveyed and critically discussed. The importance of discriminating between an analog encoding realm versus digital inference will be stressed and set in contrast to common beliefs in voxel-based information as it is currently witnessed with machine learning based image classifications. We will show the role of MR image-guided digital organs for inferring sub-voxel information from in-vivo measurements and will paint a future scenario of patient-specific in-silico diagnostics and prediction including approaches to optimal experimental design of imaging.
+| 10:00 UTC | Regular papers (each: 2 min presentation, 8 min Q&A)
+| | A bi-atrial statistical shape model as a basis to classify left atrial enlargement from simulated and clinical 12-lead ECGs<br>*Claudia Nagel, Matthias Schaufelberger, Olaf Doessel and Axel Loewe*
+| | The Impact of Domain Shift on Left and Right Ventricle Segmentation in Short Axis Cardiac MR Images<br>*Devran Ugurlu, Esther Puyol-Antón, Bram Ruijsink, Alistair Young, Inês Machado, Kerstin Hammernik, Andrew King, Julia Schnabel*
+| | Characterizing myocardial ischemia and reperfusion patterns with hierarchical manifold learning<br>*Benoît Freiche, Patrick Clarysse, Magalie Viallon, Pierre Croiselle, Nicolas Duchateau*
+| | Unsupervised Multi-Modality Registration Network based on Spatially Encoded Gradient Information<br>*Wangbin Ding, Lei Li, Liqin Huang, Xiahai Zhuang*
+| | In-silico analysis of device-related thrombosis for different left atrial appendage occluder settings<br>*Eric Planas, Jordi Mill, Andy Olivares, Xabier Morales, Maria Isabel Pons, Xavier Iriart, Hubert Cochet, Oscar Camara*
+| 11:00 UTC | Break
+| 11:15 UTC | Poster session 1 
+| | Multi-atlas segmentation of the aorta from 4D PC-MRI: comparison of several fusion strategies<br>*Diana Marin, Arnaud Boucher, Siyu Lin, Chloe Bernard, Marie-Catherine Morgant, Alexandre Cochet, Alain Lalande, Olivier Bouchot, Benoit Presles*
+| | Quality-aware cine cardiac MRI reconstruction and analysis from undersampled k-space data<br>*Inês Machado, Esther Puyol-Antón, Kerstin Hammernik, Gastão Cruz, Devran Ugurlu, Bram Ruijsink, Miguel Castelo-Branco, Alistair Young, Claudia Prietro, Julia Schnabel, Andrew King*
+| | Coronary artery centerline refinement using GCN trained with synthetic data<br>*Zhanqiang Guo, Yifan Zhang, Jianjiang Feng, Eddy Yang, Lan Qin, Jie Zhou*
+| | Novel imaging biomarkers to evaluate heart dysfunction post-chemotherapy: a preclinical MR feasibility study<br>*Peter Lin, Terenz Escartin, Matthew Ng, Melissa Larsen, Jen Barry, Idan Roifman, Mihaela Pop*
+| | Vessel extraction and analysis of aortic dissection<br>*Hui Fang, Zhanqiang Guo, Guozhu Shao, Zimeng Tan, Jinyang Yu, Jia Liu, Yukun Cao, Jie Zhou, Heshui Shi, Jianjiang Feng*
+| | Generating subpopulation-specific biventricular anatomy models using conditional point cloud variational autoencoders<br>*Marcel Beetz, Abhirup Banerjee, Vicente Grau*
+| | Hierarchical multi-modality prediction model to assess obesity-related remodelling<br>*Gabriel Bernardino, Patrick Clarysse, Alvaro Sepúlveda-Martínez, Merida Rodríguez-López, Susanna Prat-Gonzalez, Marta Sitges, Eduard Gratacós, Fatima Crispi, Nicolas Duchateau*
+| 12:00 UTC | Lunch break
+| 13:00 UTC | M2Ms-2 (Multi-Disease, Multi-View & Multi-Center Right) Right Ventricular Challenge results
+| 15:00 UTC | Break
+| 15:15 UTC | Poster session 2
+| | Simultaneous segmentation and motion estimation of left ventricular myocardium in 3D echocardiography using multi-task learning<br>*Kevin Ta, Shawn Ahn, John Stendahl, Jonathan Langdon, Albert Sinusas, James Duncan*
+| | SPHARM-based statistical shape analysis of the tricuspid valve in hypoplastic left heart syndrome<br>*Jared Vicory, Christian Herz, David Allemang, Hannah Nam, Alana Cianciulli, Chad Vigil, Ye Han, Matthew Jolley, Beatriz Paniagua*
+| | Multi-modality cardiac segmentation via mixing domains for unsupervised adaptation<br>*Fuping Wu, Lei Li, Xiahai Zhuang*
+| | Uncertainty-aware training for cardiac resynchronisation therapy response prediction<br>*Tareen Dawood*
+| | Cross-domain artefact correction of cardiac MRI<br>*Caner Ozer, Ilkay Oksuz*
+| | Detection and classification of coronary artery plaques in coronary computed tomography angiography using 3D CNN<br>*Jun-Ting Chen, Yu-Cheng Huang, Holger Roth, Dong Yang, Chih-Kuo Lee, Wen-Jeng Lee, Tzung-Dau Wang, Cheng-Ying Chou, Weichung Wang*
+| | Inﬂuence of morphometric and mechanical factors in the conﬁguration of thoracic aorta ﬁnite element modeling<br>*Ruifen Zhang, Monica Sigovan, Patrick Clarysse*
+| 16:00 UTC | Regular papers (each: 2 min presentation, 8 min Q&A)
+| | Improved AI-based Segmentation of Apical and Basal Slices from Clinical Cine CMR<br>*Jorge Mariscal Harana, Naomi Kifle, Reza Razavi, Andrew King, Bram Ruijsink, Esther Puyol-Antón*
+| | Valve flattening with functional biomarkers for the assessment of mitral valve repair<br>*Paula Casademunt, Oscar Camara, Bart Bijnens, Hernán G. Morales*
+| | Predicting 3D Cardiac Deformations With Point Cloud Autoencoders<br>*Marcel Beetz, Julius Ossenberg-Engels, Abhirup Banerjee, Vicente Grau*
+| | Neural Plaque Angular Characterizer: Automated Quantification of Polar Distribution for Plaque Composition<br>*Hyungjoo Cho, Hyun-Seok Min, Soo-Jin Kang, Dongmin Choi, Hwiyoung Kim*
+| | Mesh Convolutional Neural Networks for Wall Shear Stress Estimation in 3D Artery Models<br>*Julian Suk, Pim de Haan, Phillip Lippe, Christoph Brune, Jelmer Wolterink*
+| | An Unsupervised 3D Recurrent Neural Networkfor Slice Misalignment Correction in CardiacMR Imaging<br>*Qi Chang, Zhennan Yan, Meng Ye, Kanski Mikael, Subhi Al’Aref, Leon Axel, Dimitris Metaxas*
+| 17:12 UTC | Prizes and closing
