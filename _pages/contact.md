@@ -9,6 +9,7 @@ header:
 ---
 
 1. Alistair Young, King's College London, United Kingdom
+1. Mihaela Pop, University of Toronto, Canada
 2. Maxime Sermesant, Inria, France
 3. Oscar Camara, Universitat Pompeu Fabra, Spain
 4. Esther Puyol Antón, King's College London, United Kingdom
